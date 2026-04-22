@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashiq Husaain | Research Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('14.JPEG') no-repeat center/cover;
+    background-attachment: fixed;
+    color: #333;
+}
+
+/* Overlay effect */
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.4);
+    z-index: -1;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid #0a3d62;
+    object-fit: cover;
+}
+
+header h1 {
+    margin: 10px 0 5px;
+    color: #0a3d62;
+}
+
+/* Navbar */
+nav {
+    background: #0a3d62;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    margin: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Sections */
+section {
+    display: none;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#home {
+    display: block;
+}
+
+h2 {
+    color: #0a3d62;
+}
+
+/* Button */
+.btn {
+    background: #1e90ff;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #0a3d62;
+    color: white;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+    <img src="12.jpeg"
+class="profile">
+    <div class="text">
+        <h1>Ashiq Hussain</h1>
+        <p>PhD Researcher| Green Energy + AI</p>
+    </div>
+</header>
+<style>
+    .header{
+        display:flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap:15px;
+        padding:10px;
+    }
+    .profile{
+        width:200px;
+        height:200px;
+        border-radius:50%;
+    }
+    .text{
+        text-align: left;
+    }
+    </style>
+    <nav>
+
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('about')">About</a>
+    <a onclick="showSection('research')">Research</a>
+    <a onclick="showSection('projects')">Projects</a>
+    <a onclick="showSection('blog')">Blog</a>
+    <a onclick="showSection('contact')">Contact</a>
+    </nav>
+    <!--HOME-->
+    <section id="home">
+
+    <p><h4>Welcome to my research portfolio focused on AI-driven green energy systems.</p></h4>
+    <ul>
+        <li>Solar PV & Microgrids</li>
+        <li>AI Optimization</li>
+        <li>Reinforcement Learning</li>
+    </ul>
+</section>
+
+<!-- ABOUT --> 
+ <section id="about">
+    <p><b>Education:</b></p>
+ </ul>
+        <li>BS Electrical Engineering</li>
+        <li>MS Energy Systems</li>
+    </ul>
+
+    <p><b>Skills:</b></p>
+    <ul>
+        <li>Python</li>
+        <li>Machine Learning</li>
+        <li>Optimization (MILP)</li>
+    </ul>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+    <p><h4>My research focuses on combining AI with energy systems</p></h4>
+
+    <ul>
+        <li>Smart Grids</li>
+        <li>Renewable Energy</li>
+        <li>AI Control Systems</li>
+    </ul>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+
+    <p><b>Energy Optimization using RL</b></p>
+    <p>Reducing cost using reinforcement learning.</p>
+
+    <p><b>Demand Response System</b></p>
+    <p>TOU pricing optimization.</p>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+    <ul>
+        <li>AI in Energy Systems</li>
+        <li>PV Uncertainty</li>
+        <li>Smart Grid Future</li>
+    </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <p>Phone:070-65172233</p>
+    <p>Email: ee.ashiqhussain230@gmail.com</p>
+    <br>
+    <a href="#" class="btn">Download CV</a>
+</section>
+
+<footer>
+    <p>© 2026 Ashiq Hussain | Research Portfolio</p>
+</footer>
+
+<script>
+function showSection(id) {
+    let sections = document.querySelectorAll("section");
+    sections.forEach(sec => sec.style.display = "none");
+
+    document.getElementById(id).style.display = "block";
+}
+</script>
+
+</body>
+</html>
